@@ -1,6 +1,7 @@
 from datetime import datetime
 import json
 import os
+import sys
 import subprocess
 import tempfile
 import time
@@ -168,7 +169,7 @@ def essay_app():
 
             # Call essay_writer.py to have it write the essay
             command = [
-                'python', 'app/essay_writer.py',
+                sys.executable, 'app/essay_writer.py',
                 '--essay-details', essay_details_json,
                 '--tmpdirname', tmpdirname,
                 '--tmpfilename', tmpfilename]
