@@ -25,7 +25,7 @@ You can use this in the gui with streamlit:
 streamlit run app/appy.py
 ```
 
-or try the hosted version on []().
+or try the hosted version on [Streamlit community](https://huntersathompson.streamlit.app/).
 
 You need an OpenAI API key. You can get one at https://platform.openai.com/
 
