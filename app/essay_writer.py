@@ -2,13 +2,13 @@ import argparse
 import json
 import os
 
-from dotenv import load_dotenv
-
 from langchain import hub
 from langchain_community.chat_models import ChatOpenAI
 from langchain.prompts import ChatPromptTemplate
 from langchain.schema import StrOutputParser
 from langchain.schema.runnable import RunnablePassthrough
+
+from dotenv import load_dotenv
 
 from document_loader import document_parser_and_loader
 from length_manager import length_manager

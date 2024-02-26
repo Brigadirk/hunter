@@ -5,15 +5,12 @@ import subprocess
 import tempfile
 import time
 
-from dotenv import load_dotenv
 import streamlit as st
 
 import model_list
 import prompt_templates
 from ui_components.sidebar import sidebar
 from ui_components.ui_utils import save_uploaded_file, save_uploaded_file_list
-
-load_dotenv()
 
 def essay_app():
     """
